@@ -1,0 +1,10 @@
+@import '../../style/variables';
+.nav-btn {
+    padding: 10px 45px;
+    background: transparent;
+    color: $black-color;
+    border-color: #eee;
+}
+.header {
+    box-shadow: inset 0 10px 27px 3px rgba(221, 221, 221, 0.3);
+}
