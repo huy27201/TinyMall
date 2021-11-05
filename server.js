@@ -4,6 +4,7 @@ const bodyParser = require('body-parser')
 
 //routes
 const items = require('./routes/API/buyers')
+const orders = require('./routes/API/orders')
 
 
 const app = express()
@@ -20,6 +21,7 @@ mongoose
 app.use(bodyParser.json());
 //use routes
 app.use('/API/buyers', items);
+app.use('/API/orders', orders);
 //
 
 
