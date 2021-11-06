@@ -2,11 +2,16 @@ const express = require('express')
 const mongoose = require('mongoose')
 const bodyParser = require('body-parser')
 
+
 //routes
-const items = require('./routes/API/buyers')
+const buyers = require('./routes/API/users')
+const products = require('./routes/API/products')
+const attachment = require('./routes/API/attachment')
 
 
 const app = express()
+
+
 
 //DB config
 const db = require('./config/keys').mongoURI;
@@ -17,11 +22,15 @@ mongoose
     .then(()=> console.log('MongoDB connected...'))
     .catch(err=>console.log(err));
 
+
+
+//bodyparser
 app.use(bodyParser.json());
 //use routes
-app.use('/API/buyers', items);
-//
-
+app.use('/users', buyers);
+app.use('/products', products);
+app.use('/attachment',attachment);
+app.use('/uploads', express.static(__dirname+'/uploads'));
 
 const port = process.env.PORT || 5000;
 

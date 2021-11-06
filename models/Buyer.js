@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 const Schema = mongoose.Schema;
 
 //
-const BuyerSchema = new Schema({
+const UserSchema = new Schema({
     userName: String,
     password: String,
     name: String,
@@ -10,6 +10,6 @@ const BuyerSchema = new Schema({
     wallet: Number,
 });
 
-//"Item" = Collection name
-const Buyer = mongoose.model('Buyer',BuyerSchema);
-module.exports = Buyer;
+//"User" -> Collection name
+const User = mongoose.model('User', UserSchema);
+module.exports = User;
