@@ -1,0 +1,17 @@
+.banner {
+    margin-bottom: 10px;
+    position: relative;
+    background-color: #f1f6f7;
+}
+.banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 35%;
+    background-color: #384aeb;
+}
+.showcase {
+
+}

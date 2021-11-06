@@ -1,0 +1,33 @@
+.slider-item {
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba($color: #fff, $alpha: 0.8);
+        opacity: 0;
+        transition: 0.4s ease;
+    }
+    .slider-info {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: #384aeb;
+        padding: 23px 90px 23px 25px;
+        opacity: 0;
+        z-index: -1;
+        transition: 0.4s ease;
+    }
+    &:hover .slider-info {
+        opacity: 1;
+        z-index: 3;
+        bottom: 50px;
+    }
+    &:hover::after {
+        opacity: 1;
+    }
+}
