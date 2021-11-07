@@ -12,6 +12,7 @@ import {
     DropdownToggle,
     DropdownMenu,
 } from "reactstrap"
+import { Link } from 'react-router-dom'
 import './Header.scss'
 
 function Header() {
@@ -38,24 +39,24 @@ function Header() {
                 <Collapse navbar>
                     <Nav navbar className="ms-auto me-auto">
                         <NavItem>
-                            <NavLink href="/" className="py-4 px-0 me-5">Home</NavLink>
+                            <NavLink tag={Link} to="/" className="py-4 px-0 me-5">Home</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="/shop" className="py-4 px-0 me-5">Shop</NavLink>
+                            <NavLink tag={Link} to="/shop" className="py-4 px-0 me-5">Shop</NavLink>
                         </NavItem>
                         <UncontrolledDropdown inNavbar nav>
                             <DropdownToggle nav className="py-4 px-0 me-5">Pages</DropdownToggle>
                             <DropdownMenu end>
                                 <DropdownItem>
-                                    <NavLink href="/login">Login</NavLink>
+                                    <NavLink tag={Link} to="/login">Login</NavLink>
                                 </DropdownItem>
                                 <DropdownItem>
-                                    <NavLink href="/register">Register</NavLink>
+                                    <NavLink tag={Link} to="/register">Register</NavLink>
                                 </DropdownItem>
                             </DropdownMenu>
                         </UncontrolledDropdown>
                         <NavItem>
-                            <NavLink href="/contact" className="py-4 px-0">Contact</NavLink>
+                            <NavLink tag={Link} to="/contact" className="py-4 px-0">Contact</NavLink>
                         </NavItem>
                     </Nav>
                     <Nav navbar>
