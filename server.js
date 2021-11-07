@@ -5,7 +5,7 @@ const bodyParser = require('body-parser')
 
 //routes
 const orders = require('./routes/API/orders')
-const buyers = require('./routes/API/users')
+const users = require('./routes/API/users')
 const products = require('./routes/API/products')
 const attachment = require('./routes/API/attachment')
 
@@ -28,10 +28,9 @@ mongoose
 //bodyparser
 app.use(bodyParser.json());
 //use routes
-app.use('/API/orders', orders);
 //
 app.use('/API/orders', orders);
-app.use('/users', buyers);
+app.use('/users', users);
 app.use('/products', products);
 app.use('/attachment',attachment);
 app.use('/uploads', express.static(__dirname+'/uploads'));
