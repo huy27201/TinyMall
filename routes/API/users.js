@@ -7,21 +7,19 @@ const Buyer = require('../../models/Buyer')
 //@route GET api/buyer
 //@desc Get All buyer
 //@access Public
-router.get('/',(req,res)=>{
+router.get('/',(req,res,next)=>{
     Buyer.find()
-    //.sort({date : -1})
     .then(buyers => res.json(buyers))
 });
 
 //@route POST api/buyer
 //@desc Create a POST
 //@access Public
-router.post('/',(req,res)=>{
+router.post('/',(req,res,next)=>{
     const newBuyer = new Buyer({
         userName: req.body.userName,
     
     });
-    
     newBuyer.save().then(buyer => res.json(buyer))
 });
 

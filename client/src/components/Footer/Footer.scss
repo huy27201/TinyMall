@@ -1,0 +1,26 @@
+.dark-blue{
+    background-color: #002347ED;
+    color: white;
+}
+
+.footer{
+    padding: 7rem 0;
+
+    .image li{
+        width: 50px;
+        height: 50px;
+    }
+
+    p{
+        color: #7b838a
+    }
+    
+    a{
+        display: block;
+        color: #7b838a;
+        padding: 0.5rem 0;
+    }
+    a:hover{
+        color: #4C5CED
+    }
+}
