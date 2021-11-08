@@ -33,7 +33,7 @@ function Header() {
 
     return (
         <header className={active ? "header fixed-top" : "header"}>
-            <Navbar expand="lg" light container>
+            <Navbar expand="lg" light container color="light">
                 <NavbarBrand href="/">TiMa</NavbarBrand>
                 <NavbarToggler onClick={noRefCheck} />
                 <Collapse navbar>
