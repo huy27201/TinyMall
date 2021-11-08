@@ -2,7 +2,7 @@ const  express = require('express')
 const router = express.Router();
 
 //Item Model
-const Buyer = require('../../models/Buyer')
+const Buyer = require('../../models/User')
 
 //@route GET api/buyer
 //@desc Get All buyer
