@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import {NavLink} from 'reactstrap';
 import { Link } from 'react-router-dom'
 import './Login.scss';
+import axios from 'axios'
 
 function Login() {
     const [user, setUser] = useState("");
@@ -14,7 +15,14 @@ function Login() {
     }
     const submitForm = e => {
         e.preventDefault();
-
+        console.log(user);
+        axios.post('http://localhost:5000/login', {
+            username: user,
+            password: password
+        })
+        .then(res => {
+            console.log(res);
+        })
     }
     return (
         <div className="login container mt-5 mb-5">
