@@ -18,6 +18,7 @@ router.get('/',(req,res)=>{
     .then(products => res.json(products))
 });
 
+
 //@route POST api/products
 //@desc Create a POST
 //@access Public

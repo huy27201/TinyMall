@@ -35,10 +35,6 @@ app.use('/users', users);
 app.use('/products', products);
 app.use('/attachment',attachment);
 app.use('/uploads', express.static(__dirname+'/uploads'));
-app.use('/login', (req, res) => {
-    console.log(req.body)
-    res.send({"text":'bau duoi'})
-})
 
 const port = process.env.PORT || 5000;
 

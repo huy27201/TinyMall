@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Subcribe from './Subcribe'
 import '../../style/_global.scss'
 import Item from './ProductItem'
+import axios from 'axios';
 function ProductList() {
     const list = [
         {
@@ -96,6 +97,10 @@ function ProductList() {
             'product_images.image_url': 'https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/435102/item/goods_66_435102.jpg?width=1600&impolicy=quality_75'
         }
     ]
+    axios.get("http://localhost:5000/products")
+    .then(res => {
+        console.log(res);
+    })
     return (
         <main>
             <section className="shop-section mb-5">

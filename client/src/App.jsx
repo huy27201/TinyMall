@@ -8,6 +8,7 @@ import Register from './components/Login/Register'
 import Forget from './components/Login/ForgotPass'
 import Products from './components/Product/ProductList'
 
+import './style/_global.scss'
 import './style/_reset.scss'
 
 function App() {
