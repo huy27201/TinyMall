@@ -14,8 +14,14 @@ const Product = require('../../models/Product')
 //@desc Get All products
 //@access Public
 router.get('/',(req,res)=>{
-    Product.find()
-    .then(products => res.json(products))
+    if (req.query.id) {
+        Product.findById(req.query.id)
+            .then(data => res.json(data));
+    }
+    else {
+        Product.find()
+        .then(products => res.json(products))
+    }
 });
 
 //@route POST api/products
