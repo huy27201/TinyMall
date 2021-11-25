@@ -42,7 +42,7 @@ function Header() {
                             <NavLink tag={Link} to="/" className="py-4 px-0 me-5">Home</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink tag={Link} to="/shop" className="py-4 px-0 me-5">Shop</NavLink>
+                            <NavLink tag={Link} to="/products" className="py-4 px-0 me-5">Shop</NavLink>
                         </NavItem>
                         <UncontrolledDropdown inNavbar nav>
                             <DropdownToggle nav className="py-4 px-0 me-5">Pages</DropdownToggle>

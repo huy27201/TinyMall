@@ -26,7 +26,7 @@ mongoose
 const cors = require("cors")
 
 //bodyparser
-app.use(bodyParser.json());
+//app.use(bodyParser.json());
 //use routes
 //
 app.use(cors())

@@ -23,7 +23,7 @@ function Register() {
         e.preventDefault();
     }
     return (
-        <div className="login container mt-5 mb-5">
+        <div className="container mt-5 mb-5 shadow-lg">
             <div className="row">
                 <div className="col-lg-6 blue">
                     <div className="side-box">
@@ -34,7 +34,7 @@ function Register() {
                         </div>
                     </div>
                 </div>
-                <div className="col-lg-6 shadow">
+                <div className="col-lg-6">
                     <div className="register-box my-5 py-2">
                         <h4 className="text-uppercase text-center mb-5 fw-bold">Create an acount</h4>
                         <form className="row register-form mx-auto">

@@ -1,6 +1,4 @@
 import React from 'react';
-import { NavLink } from 'reactstrap';
-import { Link } from 'react-router-dom';
 import './Footer.scss';
 function Footer() {
     return (

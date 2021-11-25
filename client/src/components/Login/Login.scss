@@ -3,6 +3,12 @@
     color: white;
 }
 
+@media (min-width: 992px){
+    .login .container{
+        width: 960px !important;
+    }
+}
+
 .side-box{
     padding: 20% 0;
     height: 100%;
