@@ -1,0 +1,38 @@
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: #000;
+}
+
+.product .product-price{
+    color: #0000ff;
+}
+
+.product .btn{
+    border: 1px solid #384aeb;
+    padding: 0.5rem 2rem;
+    border-radius: 300px;
+    color: #fff;
+    background-color: #384aeb;
+}
+
+.product .btn:hover{
+    background-color: #fff;
+    color: #384aeb;
+}
+
+.product .product-icon{
+    i{
+        color: #222222;
+        background-color: #ddd;
+        border: 1px  solid #ddd;
+        padding: 1rem;
+    }
+
+    i:hover{
+        background-color: #fff;
+        color: #384aeb;
+        box-shadow: 0.5rem 0.5rem 1rem #ddd;
+    }
+}
+
