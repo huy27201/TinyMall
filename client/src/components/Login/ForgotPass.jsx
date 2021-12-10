@@ -1,7 +1,4 @@
 import React, {useState} from 'react';
-import axios from 'axios';
-import {NavLink} from 'reactstrap';
-import { Link } from 'react-router-dom';
 import './Login.scss';
 
 function Forget() {
