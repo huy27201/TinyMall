@@ -30,7 +30,7 @@ function Register() {
                         <div className="context text-center">
                             <h3 className="pb-3 fw-bold">Already have an account?</h3>
                             <p className="pb-4">Join us now</p>
-                            <Link to="/login" >Login Now</Link>
+                            <NavLink tag={Link} to="/login" >Login Now</NavLink>
                         </div>
                     </div>
                 </div>

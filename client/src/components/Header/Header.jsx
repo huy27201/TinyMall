@@ -33,7 +33,7 @@ function Header() {
 
     return (
         <header className={active ? "header fixed-top" : "header"}>
-            {/* <Navbar expand="lg" light container color="light">
+            <Navbar expand="lg" light container color="light">
                 <NavbarBrand href="/">TiMa</NavbarBrand>
                 <NavbarToggler onClick={noRefCheck} />
                 <Collapse navbar>
@@ -65,38 +65,7 @@ function Header() {
                         </NavItem>
                     </Nav>
                 </Collapse>
-            </Navbar> */}
-            <div>
-                <Navbar
-                    color="faded"
-                    light
-                >
-                    <NavbarBrand
-                        className="me-auto"
-                        href="/"
-                    >
-                        reactstrap
-                    </NavbarBrand>
-                    <NavbarToggler
-                        className="me-2"
-                        onClick={function noRefCheck() { }}
-                    />
-                    <Collapse navbar>
-                        <Nav navbar>
-                            <NavItem>
-                                <NavLink href="/components/">
-                                    Components
-                                </NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <NavLink href="https://github.com/reactstrap/reactstrap">
-                                    GitHub
-                                </NavLink>
-                            </NavItem>
-                        </Nav>
-                    </Collapse>
-                </Navbar>
-            </div>
+            </Navbar>
         </header>
     );
 }

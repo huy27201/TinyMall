@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { NavLink } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import './Login.scss';
 
@@ -33,7 +34,7 @@ function Login() {
                                 <div className="context text-center">
                                     <h3 className="pb-3 fw-bold">New to our website?</h3>
                                     <p className="pb-4">Join us now</p>
-                                    <Link to="/register" >Create an Account</Link>
+                                    <NavLink tag={Link} to="/register" >Create an Account</NavLink>
                                 </div>
                             </div>
                         </div>
@@ -55,7 +56,7 @@ function Login() {
                                     </div>
                                     <div className="col-md-12 mb-3 text-center">
                                         <input className="form-control mb-2" type="submit" value="Log In" onClick={submitForm} />
-                                        <Link to="/reset" >Forgot Password?</Link>
+                                        <NavLink tag={Link} to="/reset" >Forgot Password?</NavLink>
                                     </div>
                                 </form>
                             </div>
