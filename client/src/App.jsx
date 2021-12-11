@@ -5,12 +5,7 @@ import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 import Login from './components/Login/Login'
 import Register from './components/Login/Register'
-import Forget from './components/Login/ForgotPass'
-import Products from './components/Product/ProductList'
-
-import './style/_global.scss'
-import './style/_reset.scss'
-
+import ProductDetail from './components/ProductDetail/ProductDetail'
 function App() {
   return (
     <Router>
@@ -22,8 +17,8 @@ function App() {
 
           <Route exact path="/login" element={<Login />} />
           <Route exact path="/register" element={<Register />} />
-          <Route exact path="/reset" element={<Forget />} />
-          <Route exact path="/products" element={<Products />} />
+          {/* product detail in /shop  */}
+          <Route exact path="/shop" element={<ProductDetail/>}/>
         </Routes>
         <Footer />
       </div>
